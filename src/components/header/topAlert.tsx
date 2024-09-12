@@ -12,20 +12,22 @@ export const TopAlert = () => {
   if (closed) return null;
   return (
     <>
-      <div className="topAlertMobileContainer">
-        <div className="mobileAlertText">
-          <p className="alertText">
-            This is the documentation for Hasura DDN, the future of data
-            delivery.
-            <span className="clickHereText">
-              {" "}
-              Click here for the Hasura v2.x docs.
-            </span>
-          </p>
+      <div className="mobileAlertContainer">
+        <div className="topAlertMobileContainer">
+          <div className="mobileAlertText">
+            <p className="alertText">
+              This is the documentation for Hasura DDN, the future of data
+              delivery.
+              <span className="clickHereText">
+                {" "}
+                Click here for the Hasura v2.x docs.
+              </span>
+            </p>
+          </div>
+          <span onClick={handleClose}>
+            <DeleteIcon className="alertDeleteIcon" />
+          </span>
         </div>
-        <span onClick={handleClose}>
-          <DeleteIcon className="alertDeleteIcon" />
-        </span>
       </div>
       <div className="firstAlertTopContiner">
         <div className="topAlertContainer">

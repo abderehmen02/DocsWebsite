@@ -3,9 +3,13 @@
 }
 .headerContainer {
   background-color: #f3f4f6;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .firstAlertTopContiner {
+  display: block;
   width: 100%;
   padding: 1.5rem;
 }
@@ -124,4 +128,57 @@
   gap: 15px;
   align-items: center;
   margin: 0px 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .mobileHeader {
+    display: flex;
+    background-color: #f3f4f6;
+    flex-direction: column;
+    padding: 16px;
+    gap: 24px;
+  }
+  .firstAlertTopContiner {
+    display: none;
+  }
+  .topAlertMobileContainer {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 4px;
+    background-color: white;
+  }
+  .mobileAlertText {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileNavbar {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobileAlertContainer {
+    padding: 1.5rem;
+    background-color: #f3f4f6;
+  }
+  .navBarContainer {
+    display: none;
+  }
+  .mobileNavbarFirstSection {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    gap: 3px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobileAlertContainer {
+    display: none;
+  }
+  .mobileNavbar {
+    display: none;
+  }
 }

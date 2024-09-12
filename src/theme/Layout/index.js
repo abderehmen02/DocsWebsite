@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme-original/Layout";
 import { TopAlert } from "@site/src/components/header/topAlert";
 import { Logo } from "@site/src/components/icons/logo";
-import { DocsSvg, RightArrow } from "@site/src/components/icons";
+import { DocsSvg, MenuIcon, RightArrow } from "@site/src/components/icons";
 import { DropDown } from "@site/src/components/header/dropdown";
 import SearchBar from "@theme/SearchBar";
 
@@ -11,7 +11,19 @@ export default function LayoutWrapper(props) {
     <>
       <Layout {...props}>
         <div className="headerContainer">
-          <TopAlert />
+          <div className="mobileAlertContainer">
+            <TopAlert />
+          </div>
+          <div className="mobileNavbar">
+            <div className="mobileNavbarFirstSection">
+              <MenuIcon />
+              <Logo />
+              <DocsSvg />
+            </div>
+            <div style={{ width: "50px" }}>
+              <SearchBar />
+            </div>
+          </div>
           <div className="navBarContainer">
             <div className="navBarFirstSection">
               <Logo /> <DocsSvg />

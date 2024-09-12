@@ -40,31 +40,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout>
-      <HomepageHeader />
       <main>
-        <div className="headerContainer">
-          <TopAlert />
-          <div className="navBarContainer">
-            <div className="navBarFirstSection">
-              <Logo /> <DocsSvg />
-              <div className="dropDownAndBtn">
-                <button className="outlinedBtn">Tuturials</button>
-                <DropDown />
-              </div>
-            </div>
-            <div className="navBarSecondSection">
-              <SearchBar />
-            </div>
-            <div className="navBarLastSection">
-              <button className="outlinedBtn">Hasura.io</button>
-              <button className="outlinedBtn">Testomonials</button>
-              <button className="primaryBtn">
-                Log in <RightArrow />
-              </button>
-            </div>
-          </div>
-        </div>
-
         <HomepageFeatures />
       </main>
     </Layout>

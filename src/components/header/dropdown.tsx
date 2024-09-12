@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RightArrow } from "../icons";
+import { ArrowDown, RightArrow } from "../icons";
 import { cn } from "@site/src/utils/cn";
 
 const values = ["v3.x", "v2.x", "v1.x"];
@@ -14,7 +14,7 @@ export const DropDown = () => {
       onMouseOut={() => setOpenDropDown(false)}
     >
       <div className="selectedDropDown">
-        {selectedValue} <RightArrow />
+        {selectedValue} <ArrowDown />
       </div>
       {openDropDown && (
         <div className="dropDownListContainer">

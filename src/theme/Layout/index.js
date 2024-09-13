@@ -11,7 +11,10 @@ export default function LayoutWrapper(props) {
   return (
     <>
       <Layout {...props}>
-        <div className="headerContainer">
+        <div
+          className="headerContainer"
+          style={{ position: "relative", zIndex: 60 }}
+        >
           <TopAlert />
           <div className="mobileNavbar">
             <div className="mobileNavbarFirstSection">

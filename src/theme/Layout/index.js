@@ -12,9 +12,7 @@ export default function LayoutWrapper(props) {
     <>
       <Layout {...props}>
         <div className="headerContainer">
-          <BrowserOnly>
-            <TopAlert />
-          </BrowserOnly>
+          <TopAlert />
           <div className="mobileNavbar">
             <div className="mobileNavbarFirstSection">
               <MenuIcon />

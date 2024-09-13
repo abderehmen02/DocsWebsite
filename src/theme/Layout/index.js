@@ -5,13 +5,16 @@ import { Logo } from "@site/src/components/icons/logo";
 import { DocsSvg, MenuIcon, RightArrow } from "@site/src/components/icons";
 import { DropDown } from "@site/src/components/header/dropdown";
 import SearchBar from "@theme/SearchBar";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export default function LayoutWrapper(props) {
   return (
     <>
       <Layout {...props}>
         <div className="headerContainer">
-          <TopAlert />
+          <BrowserOnly>
+            <TopAlert />
+          </BrowserOnly>
           <div className="mobileNavbar">
             <div className="mobileNavbarFirstSection">
               <MenuIcon />
